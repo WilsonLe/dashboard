@@ -3,7 +3,8 @@ services:
     container_name: dashboard
     image: lissy93/dashy
     volumes:
-      - config.yml:/app/public/conf.yml
+      - ./config.yml:/app/public/conf.yml
+      - ./icons/:/app/public/item-icons/
     ports:
       - 7349:80
     environment:
